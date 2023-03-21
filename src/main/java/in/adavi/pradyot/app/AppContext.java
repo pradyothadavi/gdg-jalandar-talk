@@ -5,7 +5,8 @@ import java.util.List;
 
 public class AppContext {
   
-  private static final ThreadLocal<MultivaluedMap<String, String>> threadLocalHeaders = new ThreadLocal<>();
+  private static final ThreadLocal<MultivaluedMap<String, String>>
+    threadLocalHeaders = new ThreadLocal<>();
   
   public static void reset() {
     threadLocalHeaders.remove();
